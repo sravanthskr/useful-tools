@@ -27,6 +27,23 @@
                 <select id="categoryFilter" class="category-filter">
                     <option value="">All Categories</option>
                 </select>
+                <div class="desktop-color-palette">
+                    <button id="desktopPaletteToggle" class="palette-toggle" aria-label="Color themes">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
+                            <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
+                            <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                            <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
+                            <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path>
+                        </svg>
+                    </button>
+                    <div id="desktopPaletteDropdown" class="desktop-palette-dropdown">
+                        <div class="desktop-palette-title">Color Themes</div>
+                        <div id="desktopColorPalettes" class="desktop-color-palettes">
+                            <!-- Color palettes will be inserted here -->
+                        </div>
+                    </div>
+                </div>
                 <a href="contact.html" class="nav-link">Contact</a>
                 <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
                     <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -55,10 +72,39 @@
             <div class="mobile-search-container">
                 <input type="text" id="mobileSearchInput" placeholder="Search tools..." class="search-input">
             </div>
-            <select id="mobileCategoryFilter" class="category-filter">
-                <option value="">All Categories</option>
-            </select>
-            <a href="contact.html" class="mobile-nav-link">Contact</a>
+            <div class="mobile-category-container">
+                <select id="mobileCategoryFilter" class="category-filter">
+                    <option value="">All Categories</option>
+                </select>
+            </div>
+            <div class="mobile-nav-links">
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+            </div>
+            <div class="mobile-controls">
+                <span class="mobile-controls-label">Theme</span>
+                <button id="mobileDarkModeToggle" class="mobile-dark-mode-toggle" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="color-palette-section">
+                <div class="color-palette-title">Color Themes</div>
+                <div class="color-palettes">
+                    <!-- Color palettes will be inserted here by JavaScript -->
+                </div>
+            </div>
         </div>
     </nav>
 
